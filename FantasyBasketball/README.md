@@ -81,4 +81,4 @@ D. This app helps gather information about nba players to create an optimal fant
 
 E. C++. Stats are obtained from https://basketball.realgm.com/nba/stats
 
-F. The input will be a set of commands prompted by a menu. A roster of user chosen players will be displayed. User will also have the options to display the set roster along with the results from the faceoff command. 
+F. The input will be a set of commands prompted by a menu. A roster of user chosen players will be displayed. User will also have the options to display the set roster along with the results from the faceoff command. User can save their rosters and use them again after the code is done compiling.  
