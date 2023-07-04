@@ -3,7 +3,7 @@ Each folder will contain documentation, and the youtube link demoing the project
 
 Automatic Pet Feeder: 
 
-  User answers questions about their pet, and algorithm calculate how often and quanity of the food.  
+---User answers questions about their pet, and algorithm calculate how often and quanity of the food.  
 
 
 Traffic Light System: 
