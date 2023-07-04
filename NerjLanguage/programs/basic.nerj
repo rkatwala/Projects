@@ -1,0 +1,7 @@
+func num main : {
+    num n;
+    n is 150;
+    write(n);
+
+    ret 0;
+}

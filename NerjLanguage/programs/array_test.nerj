@@ -1,0 +1,30 @@
+#declaration of function
+func num main : {
+  #declaration of array
+  array ( 20 ) [ num ] arr;
+  #declaration of local variables
+  num b;
+  num c;
+
+  #assign the result of b + c to a [ 0 ] and print
+  b is 3;
+  c is 5;
+  arr [ 0 ] is b plus c;
+  write ( arr [ 0 ] );
+
+  #assign 100 to arr [ 1 ] and print
+  arr [ 1 ] is 100;
+  write ( arr [ 1 ] );
+
+  #assign 200 to a [ 2 ] and print
+  arr [ 2 ] is 200;
+  write ( arr [ 2 ] );
+
+  #multiply a [ 0 ] by a [ 1 ] + c, assign to a [ 3 ] , and print
+  b is arr [ 1 ] plus c;
+  arr [ 3 ] is arr [ 0 ] times b ;
+  write ( arr [ 3 ] );
+
+
+  ret 0;
+}

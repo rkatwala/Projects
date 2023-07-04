@@ -1,0 +1,20 @@
+func num main : {
+  #multi-declarations? NOPE
+  #num a , b , c; 
+  num a;
+  num b;
+  num c;
+  a is 100;
+  b is 50;
+
+  if( a lt b ) then {
+    c is b;
+  }
+  else {
+    c is a;
+  }
+
+  write ( c ) ;
+
+  ret 0;
+}

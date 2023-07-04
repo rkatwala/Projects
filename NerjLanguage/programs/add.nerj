@@ -1,0 +1,11 @@
+func num main : {
+    num a;
+    num b;
+    num c;
+
+    a is 100;
+    b is 50;
+    c is a plus b;
+    write(c);
+    ret 0;
+}

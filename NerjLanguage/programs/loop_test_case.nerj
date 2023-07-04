@@ -1,0 +1,18 @@
+#This is a simple loop that counts from 1 to 10
+
+func num main : { 
+
+  num i;
+  i is 0;
+  while ( i lt 10 ) do { 
+    i is i plus 1; #need to support assignment to an operation FIXED
+    write ( i ) ;
+    if ( i eq 9 ) then {
+      leave;
+    }
+    proceed;       #parser doesn't like this line?
+ }                 #parser expects that while and if statement end blocks end with semicolon, need to decouple
+
+  ret 0;
+}
+ 

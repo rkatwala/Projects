@@ -1,0 +1,15 @@
+func num main : { 
+    num i;
+
+    i is 0;
+    while ( i lte 10 ) do { 
+        write ( i ) ;
+        if ( i gt 2 ) then {
+            leave;
+        }
+
+        i is i plus 1;
+    }
+
+    ret 0;
+}

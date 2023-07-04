@@ -1,0 +1,27 @@
+func num main : {
+  num a;
+  num b;
+  num c;
+
+  a is 100;
+  b is 50;
+
+  c is a plus b; 
+  write ( c ) ;
+
+  c is a minus; 
+  write ( c ) ;
+
+  c is a mult b;
+  write ( c ) ;
+
+  c is a divby br;
+  write ( c ) ;
+
+  a is 4;
+  b is 2;
+  c is ( a plus b ) mult 7;
+  write ( c ) ;
+
+  ret 0;
+}

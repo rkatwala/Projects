@@ -1,0 +1,22 @@
+func num main : {
+    num i;
+    num j;
+
+    i is 0;
+
+    while ( i lt 2 ) do { 
+
+        j is 1;
+
+        while ( j lte 3 ) do {
+
+            write ( j ) ; 
+            j is j plus 1;
+
+        }
+
+        i is i plus 1;
+    } 
+
+    ret 0;
+}

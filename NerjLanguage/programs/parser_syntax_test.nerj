@@ -1,0 +1,16 @@
+func num add : num a , num b  {
+  ret a plus b;
+}
+
+func num mult : num a , num b {
+  num c is a times b;
+  ret num c;             # there are multiple syntax errors in this test, this one is caught first!
+  #ret c;                    # "syntax error, unexpected INTEGER, expecting IDENT or NUMBER"
+}
+
+func num mult : num a , num b {
+  num c is a times b     # if you correct the above error, this one is caught.
+  #num c is a times b;       # "syntax error, unexpected RETURN, expecting SEMICOLON"
+  ret;                    # here's another error!
+                            # syntax error, unexpected SEMICOLON, expecting IDENT or NUMBER
+}

@@ -1,0 +1,23 @@
+func num add : num a , num b  {
+  ret a plus b;
+}
+
+func num mult : num a , num b {
+  ret a times b;
+}
+
+func num main : {
+  num a;
+  num b;
+  num c;
+  num d;
+  
+  a is 100;
+  b is 50;
+  c is add ( a , b ) ;
+  write ( c ) ;
+  d is mult ( c , a plus b ) ;
+  write ( d ) ;
+
+  ret 0;
+}
