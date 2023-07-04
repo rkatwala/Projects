@@ -13,13 +13,11 @@ Traffic Light System:
 
 Scooter Turn signal and Blind Spot detector: 
 
----Created a turn signal and a blind spot detector for scooters. This system alerts the user if something was in their blind spots while they try turning, with also a     
----signal for both turn signal and blind spot. Also included a bell for oncoming traffic.
+---Created a turn signal and a blind spot detector for scooters. This system alerts the user if something was in their blind spots while they try turning, with also a     signal for both turn signal and blind spot. Also included a bell for oncoming traffic.
 
 
 Motion Sensored Automatic Fan: 
 
----If the temperature drops below the desired temperature the fan will start. The speed of the fan is dependent on if something is near it or not. The closer will be the 
----weaker it spins. 
+---If the temperature drops below the desired temperature the fan will start. The speed of the fan is dependent on if something is near it or not. The closer will be the weaker it spins. 
 
 
