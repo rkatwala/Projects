@@ -8,4 +8,5 @@
 8. You install MYSQL from the MYSQL website.
 9. You also install MYSQL workbench which allows you to create schema tables and store procedures inside the MYSQL database.
 10. The php program examples show how you can connect to the MYSQL database using MYSQLI.
-11. After connecting to the database you can pass create, insert, delete, update, and select commands to insert and fetch data from the database and display on the browser window. 
+11. After connecting to the database you can pass create, insert, delete, update, and select commands to insert and fetch data from the database and display on the browser window.
+12. You also have to install SQL controller which enables connecting from the php pages to the SQL database. 
