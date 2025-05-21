@@ -1,0 +1,6 @@
+Contact list:
+  - Alice: alice@example.com
+  - Bob: bob123@my-domain.org
+  
+Note: send receipts to finance@company.co.uk by end of day.
+
