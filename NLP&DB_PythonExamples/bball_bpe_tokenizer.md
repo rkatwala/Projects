@@ -1,4 +1,3 @@
-```markdown
 # Basketball BPE Tokenization
 
 This repository demonstrates how to train a simple Byte-Pair Encoding (BPE) tokenizer on a small “basketball facts” corpus and then apply it to tokenize text. All code is pure Python and does not rely on external libraries beyond the standard library.
