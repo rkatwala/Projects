@@ -40,7 +40,7 @@ def check_weather():
         data = res.json()
 
         # Extract the weather description and temperature
-        description = data["weather"]["description"]
+        description = data["weather"][0]["description"]
         temp = data["main"]["temp"]
 
         # Check if the description contains any unsafe keyword (case-insensitive)
@@ -68,3 +68,4 @@ def check_weather():
 # Start the Flask server when running this script directly
 if __name__ == '__main__':
     app.run(debug=True)  # debug=True enables auto-reload and better error output during development
+
