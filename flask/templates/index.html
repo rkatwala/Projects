@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <p> Artist Search <p>
+    </header>
+
+    <section id="search-container">
+        <div id="search-bar">
+            <img src="{{ url_for('static', filename='images/search_icon.png') }}" id="search-icon" alt="Search" style="width: 16px; height: 16px;">
+            <input type="text" id="search-box" placeholder="Please enter an artist name" required>
+            <img src="{{ url_for('static', filename='images/clear_icon.png') }}" id="clear-icon" alt="Clear" style="width: 16px; height: 16px;">
+
+        </div>
+    </section>
+
+    <div id="loading" style="display: none;">
+        <img src="{{ url_for('static', filename='loading.gif') }}" alt="Loading..." style="width: 40px; height 40px">
+    </div>
+
+    <section id="results-container">
+        <div id="results"></div>
+    </section>
+
+    <section id="artist-details" style="display: none;">
+        <p id="artist-name" style:"font-size: 100px"></p>
+        <p id="artist-nationality" style="font-size: 15px;"></p>
+        <p id="artist-biography" style="font-size: 15px;"></p>
+    </section>
+
+    <footer>
+        <a href="https://www.artsy.net/" target="_blank">
+        <p>Powered by 
+            <sup> 
+                <img src="{{ url_for('static', filename='images/artsy_logo.svg') }}" alt="Artsy Logo" style="height: 15px; vertical-align: middle;">
+            </sup>
+            Artsy
+        </p> </a> 
+    </footer>
+</body>
+</html>

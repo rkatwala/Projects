@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+   font-family: Arial, sans-serif;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden; /* Prevent unwanted horizontal scrolling */
+}
+
+/* Updated Header */
+header {
+   background-color: #d3d3d3; /* Light grey */
+   color: black;
+   padding: 1px;
+   text-align: left;
+   padding-left: 20px;
+   font-size: 15px;
+   height: 40px;
+}
+
+/* Search Bar */
+#search-container {
+   margin: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#search-bar {
+   display: flex;
+   align-items: center;
+   border: 2px solid #ccc;
+   border-radius: 20px;
+   padding: 5px 10px;
+   width: 600px;
+   transition: border 0.3s;
+}
+
+#search-bar:focus-within {
+   border-color: orange;
+}
+
+/* Icons */
+#search-icon,
+#clear-icon {
+   cursor: pointer;
+   opacity: 0.5;
+   transition: opacity 0.3s;
+}
+
+#search-icon:hover,
+#clear-icon:hover {
+   opacity: 1;
+}
+
+#search-box {
+   border: none;
+   outline: none;
+   flex-grow: 1;
+   padding: 5px;
+}
+
+/* Artist Cards */
+.artist-card {
+    background-color: #205375;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 220px;
+    flex: 0 0 auto; /* Prevent shrinking */
+    transition: background-color 0.3s;
+}
+
+.artist-card:hover {
+    background-color: #112B3C; /* Slightly darker blue for hover */
+}
+
+.artist-card.active {
+    background-color: #112B3C !important; /* Dark blue */
+}
+
+
+.artist-card img.artist-image {
+   width: 210px;
+   height: 210px;
+   border-radius: 50%;
+   border: 4px solid white;
+}
+
+
+/* ✅ Fix for Scroll Bar Cutting Off First Cards */
+#results-container {
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   overflow-x: auto;  /* Enables horizontal scrolling */
+   overflow-y: hidden;
+   white-space: nowrap;
+   align-items: center;
+   padding: 10px;
+   gap: 1px;
+   scroll-behavior: smooth;
+}
+
+/* ✅ Ensures first card is visible and scroll starts correctly */
+#results {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   gap: 10px;
+   width: max-content;
+   padding-left: 0; /* Remove extra padding shifting cards */
+   padding-right: 5%;
+   margin-left: 0; /* Prevents auto centering issues */
+}
+footer a {
+    color: white; /* Ensures text remains white */
+    text-decoration: none; /* Removes underline */
+}
+
+footer a:hover {
+    color: white; /* Keeps text white even on hover */
+    text-decoration: none; /* Ensures no underline appears on hover */
+}
+
+/* Footer */
+footer {
+   background-color: #112B3C; /* Navy blue */
+   color: white;
+   padding: 10px;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+}

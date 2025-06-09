@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <h1>Artist Search</h1>
+    </header>
+
+    <section id="search-container">
+        <div id="search-bar">
+            <span id="search-icon">🔍</span>
+            <input type="text" id="search-box" placeholder="Please enter an artist name" required>
+            <span id="clear-icon">❌</span>
+        </div>
+    </section>
+
+    <div id="loading" style="display: none;">
+        <img src="{{ url_for('static', filename='loading.gif') }}" alt="Loading...">
+    </div>
+
+    <section id="results-container">
+        <div id="results"></div>
+    </section>
+
+    <section id="artist-details" style="display: none;">
+        <h2 id="artist-name"></h2>
+        <p id="artist-nationality" style="font-size: smaller;"></p>
+        <p id="artist-biography" style="font-size: x-small;"></p>
+    </section>
+
+    <footer>
+        <p>Powered by <a href="https://www.artsy.net/" target="_blank">Artsy</a></p>
+    </footer>
+</body>
+</html>

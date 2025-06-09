@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <h1>Artist Search</h1>
+    </header>
+
+    <!-- Search Bar -->
+    <section id="search-container">
+        <div id="search-bar">
+            <span id="search-icon">🔍</span>
+            <input type="text" id="search-box" placeholder="Please enter an artist name" required>
+            <span id="clear-icon">❌</span>
+        </div>
+        <button id="search-btn">Search</button>
+    </section>
+
+    <!-- Loading GIF -->
+    <div id="loading" style="display: none;">
+        <img src="{{ url_for('static', filename='loading.gif') }}" alt="Loading...">
+    </div>
+
+    <!-- Result List -->
+    <section id="results-container">
+        <div id="results"></div>
+    </section>
+
+    <!-- Artist Details Section -->
+    <section id="artist-details" style="display: none;">
+        <h2 id="artist-name"></h2>
+        <p><strong>Born:</strong> <span id="artist-birthday"></span></p>
+        <p><strong>Died:</strong> <span id="artist-deathday"></span></p>
+        <p><strong>Nationality:</strong> <span id="artist-nationality"></span></p>
+        <p id="artist-biography"></p>
+    </section>
+
+    <footer>
+        <p>Powered by <a href="https://www.artsy.net/" target="_blank">Artsy</a></p>
+    </footer>
+</body>
+</html>
+
