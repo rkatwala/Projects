@@ -40,7 +40,21 @@ def region():
 
 
 
+    '''
+    my_dict = {"b": 2, "a": 5, "c": 1}
 
+    # Sort by keys
+    sorted_by_keys = dict(sorted(my_dict.items()))
+    print(sorted_by_keys)  # Output: {'a': 5, 'b': 2, 'c': 1}
+
+
+    my_dict = {"b": 2, "a": 5, "c": 1}
+
+    # Sort by values
+    sorted_by_values = dict(sorted(my_dict.items(), key=lambda item: item[1]))
+    print(sorted_by_values)  # Output: {'c': 1, 'b': 2, 'a': 5}
+
+    '''
     result = []
 
     for reg, stats in region_groups.items():
