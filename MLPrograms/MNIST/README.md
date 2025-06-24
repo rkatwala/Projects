@@ -81,6 +81,7 @@ python cnn_mnist_pytorch.py
 ---
 
 ## 📚 License
+<img width="717" alt="Screenshot 2025-06-24 at 9 13 47 AM" src="https://github.com/user-attachments/assets/2d0317ec-74cf-4452-a76a-788c3b7f12da" />
 
 This project is released under the MIT License.
 
