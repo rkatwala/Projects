@@ -1,7 +1,3 @@
-
-## 📄 README.md
-
-````markdown
 # MNIST Digit Classification
 
 This project applies two different machine learning models to the MNIST handwritten digit dataset:
@@ -88,12 +84,3 @@ python cnn_mnist_pytorch.py
 
 This project is released under the MIT License.
 
-```
-
----
-
-Let me know if you'd like to include:
-- File size/runtime benchmarks
-- Accuracy graphs across epochs
-- Model saving/loading functionality in PyTorch
-```
